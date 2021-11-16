@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  relay:
+    build: .
+    container_name: relay
+    volumes:
+      - ".:/app"
+    ports:
+      - "5003:3000"
+# volumes:
+#   redis:

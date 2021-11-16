@@ -1,0 +1,3 @@
+[submodule "rcon-monkey"]
+	path = rcon-monkey
+	url = https://github.com/iamrickyspanish/rcon-monkey

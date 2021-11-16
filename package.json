@@ -1,0 +1,42 @@
+{
+  "name": "rcon-relay",
+  "version": "0.0.1",
+  "description": "rcon relay based on micro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro",
+    "dev": "micro-dev",
+    "docker:build": "docker build -t rcon-relay .",
+    "docker:run": "docker run -v $(pwd):/app -p 27015:27015 -it rcon-relay bash -l",
+    "docker:bash": "docker exec rcon-relay bash -l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrickyspanish/rcon-relay.git"
+  },
+  "keywords": [
+    "rcon",
+    "relay",
+    "minecraft",
+    "counterstrike",
+    "cs",
+    "cs:go",
+    "css"
+  ],
+  "author": "Enrico Lopez Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamrickyspanish/rcon-relay/issues"
+  },
+  "homepage": "https://github.com/iamrickyspanish/rcon-relay#readme",
+  "dependencies": {
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0",
+    "ws": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "serve": "^12.0.1"
+  }
+}
